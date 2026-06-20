@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Todo App</title>
+
+<link 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+<div class="container">
+<div class="todo-app">
+
+<h1>
+<i class="fa-solid fa-list-check"></i>
+Todo App
+</h1>
+
+
+<form class="input-area">
+
+<input 
+type="text"
+id="task-input"
+placeholder="Add a new task..."
+maxlength="60">
+
+
+<button id="add-task-btn">
+<i class="fa-solid fa-plus"></i>
+</button>
+
+
+</form>
+
+
+
+<div class="stats">
+
+<span id="task-count">
+0 Tasks
+</span>
+
+
+<button id="clear-btn">
+Clear Completed
+</button>
+
+</div>
+
+
+
+<div class="filter">
+
+<button class="filter-btn active" data-filter="all">
+All
+</button>
+
+
+<button class="filter-btn" data-filter="active">
+Active
+</button>
+
+
+<button class="filter-btn" data-filter="completed">
+Completed
+</button>
+
+
+</div>
+
+
+
+<ul id="task-list"></ul>
+
+
+
+<div class="empty">
+<i class="fa-solid fa-clipboard"></i>
+<p>No tasks yet</p>
+</div>
+
+
+
+</div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
